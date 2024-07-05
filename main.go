@@ -2,9 +2,11 @@ package main
 
 import (
 	"flag"
-	"fmt"
+
+	"github.com/adamnasrudin03/go-technical-test-qoin/game"
 )
 
+// go run main.go -N=3 -M=4
 func main() {
 	var (
 		N = flag.Int("N", 3, " Jumlah pemain")
@@ -12,6 +14,5 @@ func main() {
 	)
 
 	flag.Parse()
-	fmt.Println("N = ", *N, "M = ", *M)
-
+	game.Dice(*N, *M)
 }
