@@ -47,9 +47,9 @@ func Dice(players, totalDice int) {
 			continue
 		}
 
-		nextIndex := 0
-		if i+1 != len(playerPicked) {
-			nextIndex = i + 1
+		nextIndex := i
+		if nextIndex+1 != len(playerPicked) {
+			nextIndex = nextIndex + 1
 		}
 
 		for playerStop[nextIndex] {
@@ -123,9 +123,9 @@ func Dice(players, totalDice int) {
 				continue
 			}
 
-			nextIndex := 0
-			if i+1 != len(playerPicked) {
-				nextIndex = i + 1
+			nextIndex := i
+			if nextIndex+1 != len(playerPicked) {
+				nextIndex = nextIndex + 1
 			}
 
 			for playerStop[nextIndex] {
