@@ -4,6 +4,7 @@
 
 ### Jawaban
 
+![ERD](./erd-test-qoin.drawio.png) 
 
 #### Tech Stack
 
