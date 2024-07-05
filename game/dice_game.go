@@ -14,7 +14,7 @@ func Dice(players, totalDice int) {
 		dice         = []int{1, 2, 3, 4, 5, 6}
 		throw        = 1
 	)
-	fmt.Println("Pemain = ", players, ", Dadu = ", totalDice)
+	fmt.Println("Pemain =", players, ", Dadu =", totalDice)
 	fmt.Println("======================")
 	fmt.Printf("Giliran %v lempar dadu:	\n", throw)
 
