@@ -8,7 +8,7 @@
 
 #### Tech Stack
 
-**Client:** ReactJS / NextJS, Redux, Tailwind CSS, git
+**Client:** ReactJS / NextJS, Redux, Material Design / Bootstrap, git
 
 **Server:** Go, echo/gin, gorm, PostgreSQL, Redis, excelize, JWT, git
 
