@@ -47,11 +47,16 @@ func Dice(players, totalDice int) {
 			continue
 		}
 
-		nextIndex := i
-		if nextIndex+1 != len(playerPicked) {
-			nextIndex = nextIndex + 1
-		} else if i == len(playerPicked)-1 {
-			nextIndex = 0
+		nextIndex := 0
+		if i+1 != len(playerPicked) {
+			nextIndex = i + 1
+		}
+
+		for playerStop[nextIndex] {
+			nextIndex++
+			if nextIndex == len(playerPicked) {
+				nextIndex = 0
+			}
 		}
 
 		// Check if the current player has a 1 and the next player doesn't
@@ -118,11 +123,16 @@ func Dice(players, totalDice int) {
 				continue
 			}
 
-			nextIndex := i
-			if nextIndex+1 != len(playerPicked) {
-				nextIndex = nextIndex + 1
-			} else if nextIndex == len(playerPicked)-1 {
-				nextIndex = 0
+			nextIndex := 0
+			if i+1 != len(playerPicked) {
+				nextIndex = i + 1
+			}
+
+			for playerStop[nextIndex] {
+				nextIndex++
+				if nextIndex == len(playerPicked) {
+					nextIndex = 0
+				}
 			}
 
 			// Check if the current player has a 1 and the next player doesn't
